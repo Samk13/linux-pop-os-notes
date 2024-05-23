@@ -1,3 +1,4 @@
+After installing 
 ./scripts/run_full_container.sh 
 Error saving credentials: error storing credentials - err: exit status 1, out: `error storing credentials - err: exit status 1, out: `pass not initialized: exit status 1: Error: password store is empty. Try "pass init".``
 Login failed.
