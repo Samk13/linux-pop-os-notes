@@ -34,3 +34,49 @@ mv path_to_downloaded_fonts/*.ttf ~/.local/share/fonts/
 
 ## Update the font cache
 fc-cache -fv
+
+
+# Neovim
+
+install from here:
+https://github.com/neovim/neovim/releases/tag/v0.10.0
+
+sudo mv nvim-linux64 /usr/local/
+
+Extract the tarball:
+
+```bash
+tar xzvf nvim-linux64.tar.gz
+Move the extracted directory to /usr/local (you may need sudo for this):
+```
+
+```bash
+sudo mv nvim-linux64 /usr/local/
+```
+Open your shell configuration file (e.g., .bashrc or .zshrc depending on your shell) in a text editor:
+
+```bash
+nano ~/.bashrc
+# or if you are using zsh
+nano ~/.zshrc
+```
+Add the following lines to create aliases for nvim and vi:
+
+```bash
+alias nvim='/usr/local/nvim-linux64/bin/nvim'
+alias vi='/usr/local/nvim-linux64/bin/nvim'
+```
+Save the file and exit the editor (Ctrl+X in nano, then Y and Enter to confirm).
+
+Reload your shell configuration file to apply the changes:
+
+```bash
+source ~/.bashrc
+```
+
+# add Neovim plugin
+
+https://nvchad.com/docs/quickstart/install
+
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+
