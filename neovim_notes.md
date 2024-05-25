@@ -2,8 +2,12 @@
 
 check this ![alt text](statics/neovim/nvchad-cheatsheet.webp)
 
-C = ctr
-<leader> space
+C = Ctr
+A = Alt
+S = Shift
+<leader> = space
+
+
 
 `C n` -> open explorer
 
@@ -24,3 +28,9 @@ C = ctr
 ## Visual mode
 
 Check this ![alt text](statics/neovim/image.png)
+
+## Undo Redo
+
+`u` -> undo or `:u` or `:undo`
+
+`C R` -> redo or `4C R` will undo last 4 steps.
