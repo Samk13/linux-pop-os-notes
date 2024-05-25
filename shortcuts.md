@@ -1,6 +1,8 @@
 # Audio swapping input
 
-create this bash script:
+Add the path to this bash script to a custom keyboard shortcut to switch audio output between speakers and headphones.
+to do that, create a bash script with the following content:
+
 ```bash
 #!/bin/bash
 
@@ -12,10 +14,5 @@ if [ "$CURRENT_SINK" = "bluez_output.C0_86_B3_50_E6_0E.1" ]; then
 else
     pactl set-default-sink bluez_output.C0_86_B3_50_E6_0E.1
 ```
-
-save it as `swap-audio.sh` and make it executable with `chmod +x swap-audio.sh`
-
-than assign a shortcut to it in your desktop environment settings
-in Pop!_OS it's in `Settings > Keyboard Shortcuts > Custom Shortcuts`
-in command put the path to the script and assign a shortcut to it
-
+then in Pop!_OS, go to settings -> keyboard shortcuts -> custom shortcuts -> add custom shortcut
+and set the command to the path of the bash script in command field
