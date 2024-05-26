@@ -47,11 +47,9 @@ After this step add this to ~/.bashrc:
 
 ```bash
 # NeoVim
-
 export PATH="$PATH:/opt/nvim-linux64/bin"
-alias nvim='/usr/local/nvim-linux64/bin/nvim'
-alias vi='/usr/local/nvim-linux64/bin/nvim'
-
+alias nvim='/opt/nvim-linux64/bin/nvim'
+alias vi='/opt/nvim-linux64/bin/nvim'
 ```
 Save the file and exit the editor (Ctrl+X in nano, then Y and Enter to confirm).
 
