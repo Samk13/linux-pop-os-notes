@@ -2,6 +2,17 @@
 
 short notes on installing various packages and tools
 
+
+# Brew
+
+follow instructions here: https://brew.sh/
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+
+
+
 # fzf
 Install fzf from source
 ```bash
