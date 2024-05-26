@@ -38,33 +38,20 @@ fc-cache -fv
 
 # Neovim
 
-install from here:
-https://github.com/neovim/neovim/releases/tag/v0.10.0
-
-sudo mv nvim-linux64 /usr/local/
-
-Extract the tarball:
-
 ```bash
-tar xzvf nvim-linux64.tar.gz
-Move the extracted directory to /usr/local (you may need sudo for this):
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux64.tar.gz
 ```
+After this step add this to ~/.bashrc:
 
 ```bash
-sudo mv nvim-linux64 /usr/local/
-```
-Open your shell configuration file (e.g., .bashrc or .zshrc depending on your shell) in a text editor:
+# NeoVim
 
-```bash
-nano ~/.bashrc
-# or if you are using zsh
-nano ~/.zshrc
-```
-Add the following lines to create aliases for nvim and vi:
-
-```bash
+export PATH="$PATH:/opt/nvim-linux64/bin"
 alias nvim='/usr/local/nvim-linux64/bin/nvim'
 alias vi='/usr/local/nvim-linux64/bin/nvim'
+
 ```
 Save the file and exit the editor (Ctrl+X in nano, then Y and Enter to confirm).
 
