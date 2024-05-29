@@ -191,7 +191,10 @@ Let's install the nvidia-driver-470 and the necessary utilities:
 
 ```bash
 sudo apt update
-sudo apt install nvidia-driver-470 nvidia-utils-470
+# sudo apt install nvidia-driver-470 nvidia-utils-470
+
+# see official site: https://support.system76.com/articles/install-pop/
+sudo apt install system76-driver-nvidia
 ```
 
 Step 5: Reboot Your System
