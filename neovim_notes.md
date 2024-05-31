@@ -7,8 +7,6 @@ A = Alt
 S = Shift
 <leader> = space
 
-
-
 `C n` -> open explorer
 
 ## Copy (yank) Paste
@@ -35,8 +33,7 @@ Check this ![alt text](statics/neovim/image.png)
 
 `C R` -> redo or `4C R` will undo last 4 steps.
 
-
-# NVChad
+## NVChad
 
 ## Install syntax highlight
 
@@ -53,4 +50,3 @@ install for specific file
 ```vim
 :TSInstall <yaml> 
 ```
-

@@ -14,5 +14,6 @@ if [ "$CURRENT_SINK" = "bluez_output.C0_86_B3_50_E6_0E.1" ]; then
 else
     pactl set-default-sink bluez_output.C0_86_B3_50_E6_0E.1
 ```
+
 then in Pop!_OS, go to settings -> keyboard shortcuts -> custom shortcuts -> add custom shortcut
 and set the command to the path of the bash script in command field

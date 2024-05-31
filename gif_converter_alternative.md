@@ -1,12 +1,13 @@
 
 # Convert `.webm` to `.gif`
 
-All solutions available on Pop!_OS to record as `gif` is outdated or not working, 
+All solutions available on Pop!_OS to record as `gif` is outdated or not working,
 the built in screen recorder is pretty solid, so I created this script so it convert it to gif format.
 
 # Prerequisites
 
 Install `ffmpeg`
+
 ```bash
 brew install ffmpeg
 ```
@@ -45,7 +46,6 @@ fi
 rm "$palette"
 
 ```
-
 
 or
 
@@ -118,6 +118,7 @@ fi
 rm "$palette"
 
 ```
+
 # Run
 
 ```bash

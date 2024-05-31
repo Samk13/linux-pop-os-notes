@@ -1,17 +1,15 @@
 # Docker
 
-
 Ports are already allocated but when you do `docker ps`it's empty.
 
 Solution:
 Switch to root and remove the running containers there. it's hidden from the user if you are not root.
 
-
 # Azure CLI
 
-After installing 
-./scripts/run_full_container.sh 
-Error saving credentials: error storing credentials - err: exit status 1, out: `error storing credentials - err: exit status 1, out: `pass not initialized: exit status 1: Error: password store is empty. Try "pass init".``
+After installing
+./scripts/run_full_container.sh
+Error saving credentials: error storing credentials - err: exit status 1, out: `error storing credentials - err: exit status 1, out:`pass not initialized: exit status 1: Error: password store is empty. Try "pass init".``
 Login failed.
 
 $$$user@pcname:~/$ gpg --generate-key
@@ -39,6 +37,7 @@ pub   rsa3072 2024-05-22 [SC] [expires: 2026-05-22]
 $$$user@pcname:~/$ gpg --list-keys
 /home/user/.gnupg/pubring.kbx
 -------------------------------
+
 pub   rsa3072 2024-05-22 [SC] [expires: 2026-05-22]
       asdasdasdasdasdasdasd
 
@@ -51,6 +50,5 @@ Password Store
 $$$user@pcname:~/$ az acr login --name daffyregistry01
 Login Succeeded
 
-$$$user@pcname:~/$ ./scripts/run_full_container.sh 
+$$$user@pcname:~/$ ./scripts/run_full_container.sh
 Login Succeeded
-

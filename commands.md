@@ -8,8 +8,8 @@ view system log messages with a priority level of "error" that have been logged 
 journalctl -p err -b
 ```
 
-
 provides information about the NVIDIA GPU
+
 ```bash
 nvidia-smi
 ```
@@ -25,14 +25,17 @@ Show all system information.
 ```bash
 lsb_release -a
 ```
+
 Display distribution-specific information.
 
 ```bash
 hostnamectl
 ```
+
 View or change the system hostname and related settings.
 
 System Logs
+
 ```bash
 journalctl -p err -b
 ```
@@ -42,11 +45,13 @@ Show error logs since the last boot.
 ```bash
 dmesg
 ```
+
 Print kernel ring buffer messages.
 
 ```bash
 tail -f /var/log/syslog
 ```
+
 Continuously monitor system log messages.
 
 Disk and Filesystem
@@ -97,6 +102,7 @@ Interactive process viewer.
 ```bash
 free -h
 ```
+
 Display free and used memory in human-readable format.
 
 Network
@@ -104,36 +110,42 @@ Network
 ```bash
 ifconfig
 ```
+
 Display network interface information (deprecated, use ip).
 
 
 ```bash
 ip addr
 ```
+
 Show IP addresses and network interfaces.
 
 
 ```bash
 ping <hostname/IP>
 ```
+
 Check connectivity to a specific host.
 
 
 ```bash
 traceroute <hostname/IP>
 ```
+
 Trace the route packets take to a network host.
 
 
 ```bash
 netstat -tuln
 ```
+
 Show listening ports and active connections.
 
 
 ```bash
 ss -tuln
 ```
+
 Display listening sockets and their details.
 
 Package Management
@@ -141,12 +153,14 @@ Package Management
 ```bash
 apt update
 ```
+
 Update package index (Debian/Ubuntu).
 
 
 ```bash
 apt upgrade
 ```
+
 Upgrade all upgradable packages (Debian/Ubuntu).
 
 
@@ -286,6 +300,7 @@ Networking
 ```bash
 ip link show
 ```
+
 Show network interfaces and their state.
 
 
@@ -386,4 +401,5 @@ List iptables firewall rules.
 ```bash
 fail2ban-client status
 ```
+
 Check the status of Fail2Ban.
