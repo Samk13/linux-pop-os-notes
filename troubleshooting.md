@@ -1,11 +1,11 @@
-# Docker
+## Docker
 
 Ports are already allocated but when you do `docker ps`it's empty.
 
 Solution:
 Switch to root and remove the running containers there. it's hidden from the user if you are not root.
 
-# Azure CLI
+## Azure CLI
 
 After installing
 ./scripts/run_full_container.sh
@@ -52,3 +52,13 @@ Login Succeeded
 
 $$$user@pcname:~/$ ./scripts/run_full_container.sh
 Login Succeeded
+
+## Kill processes
+
+After running this command, click on the window you wish to close.
+
+```bash
+xkill
+```
+
+Using xkill is a quick and effective way to deal with unresponsive applications in a graphical environment.
