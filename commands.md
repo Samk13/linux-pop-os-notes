@@ -1,5 +1,5 @@
- # Toubleshooting commands
- 
+# Toubleshooting commands
+
 ## System logs
   
 view system log messages with a priority level of "error" that have been logged since the last boot
@@ -62,20 +62,17 @@ df -h
 
 Show disk usage in human-readable format.
 
-
 ```bash
 du -sh *
 ```
 
 Display the size of a directory and its contents.
 
-
 ```bash
 lsblk
 ```
 
 List information about all available block devices.
-
 
 ```bash
 fdisk -l
@@ -91,13 +88,11 @@ top
 
 Display real-time system information, including CPU and memory usage.
 
-
 ```bash
 htop
 ```
 
 Interactive process viewer.
-
 
 ```bash
 free -h
@@ -113,13 +108,11 @@ ifconfig
 
 Display network interface information (deprecated, use ip).
 
-
 ```bash
 ip addr
 ```
 
 Show IP addresses and network interfaces.
-
 
 ```bash
 ping <hostname/IP>
@@ -127,20 +120,17 @@ ping <hostname/IP>
 
 Check connectivity to a specific host.
 
-
 ```bash
 traceroute <hostname/IP>
 ```
 
 Trace the route packets take to a network host.
 
-
 ```bash
 netstat -tuln
 ```
 
 Show listening ports and active connections.
-
 
 ```bash
 ss -tuln
@@ -156,13 +146,11 @@ apt update
 
 Update package index (Debian/Ubuntu).
 
-
 ```bash
 apt upgrade
 ```
 
 Upgrade all upgradable packages (Debian/Ubuntu).
-
 
 Process Management
 
@@ -172,20 +160,17 @@ ps aux
 
 Show detailed information about running processes.
 
-
 ```bash
 kill -9 <PID>
 ```
 
 Forcefully terminate a process by its PID.
 
-
 ```bash
 systemctl status <service>
 ```
 
 Check the status of a service.
-
 
 ```bash
 systemctl restart <service>
@@ -201,20 +186,17 @@ ls -l
 
 List files and directories with detailed information.
 
-
 ```bash
 cp <source> <destination>
 ```
 
 Copy files or directories.
 
-
 ```bash
 mv <source> <destination>
 ```
 
 Move or rename files or directories.
-
 
 ```bash
 rm -rf <directory>
@@ -230,13 +212,11 @@ chmod 755 <file>
 
 Change file permissions.
 
-
 ```bash
 chown <user>:<group> <file>
 ```
 
 Change file owner and group.
-
 
 ```bash
 usermod -aG <group> <user>
@@ -252,13 +232,11 @@ fsck /dev/<disk>
 
 Check and repair a filesystem.
 
-
 ```bash
 mount /dev/<disk> /mnt
 ```
 
 Mount a filesystem.
-
 
 ```bash
 umount /mnt
@@ -274,20 +252,17 @@ grep <pattern> <file>
 
 Search for a pattern in a file.
 
-
 ```bash
 find /path -name <filename>
 ```
 
 Find files by name.
 
-
 ```bash
 tar -czvf archive.tar.gz /path/to/directory
 ```
 
 Create a compressed tarball.
-
 
 ```bash
 tar -xzvf archive.tar.gz
@@ -303,20 +278,17 @@ ip link show
 
 Show network interfaces and their state.
 
-
 ```bash
 ethtool <interface>
 ```
 
 Display or change Ethernet device settings.
 
-
 ```bash
 iwconfig
 ```
 
 Show wireless network interface details.
-
 
 ```bash
 nmap <hostname/IP>
@@ -332,20 +304,17 @@ lscpu
 
 Display CPU architecture information.
 
-
 ```bash
 lsmem
 ```
 
 Display memory information.
 
-
 ```bash
 lsusb
 ```
 
 List USB devices.
-
 
 ```bash
 lspci
@@ -361,13 +330,11 @@ iostat
 
 Report CPU and I/O statistics.
 
-
 ```bash
 vmstat
 ```
 
 Report virtual memory statistics.
-
 
 ```bash
 sar
@@ -383,13 +350,11 @@ ufw status
 
 Check the status of the uncomplicated firewall.
 
-
 ```bash
 firewall-cmd --state
 ```
 
 Check the status of the firewalld service.
-
 
 ```bash
 iptables -L
@@ -397,9 +362,14 @@ iptables -L
 
 List iptables firewall rules.
 
-
 ```bash
 fail2ban-client status
 ```
 
 Check the status of Fail2Ban.
+
+Kill processes After running this command, click on the window you wish to close.
+
+```bash
+xkill
+```
