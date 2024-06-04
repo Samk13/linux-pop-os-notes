@@ -100,14 +100,6 @@ devices: (
                         };
                     },
 
-#                    {
-#                        direction: "Right";
-#                        mode: "OnRelease";
-#                        action =
-#                        {
-#                            type = "ToggleHiresScroll";
-#                        }
-#                    },
                     {
                         direction: "Right";
                         mode: "OnRelease";

@@ -35,7 +35,9 @@ pub   rsa3072 2024-05-22 [SC] [expires: 2026-05-22]
       asdasdasdasdasdasdasd
 
 $$$user@pcname:~/$ gpg --list-keys
+
 /home/user/.gnupg/pubring.kbx
+
 -------------------------------
 
 pub   rsa3072 2024-05-22 [SC] [expires: 2026-05-22]
