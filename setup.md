@@ -81,3 +81,15 @@ source ~/.bashrc
 https://nvchad.com/docs/quickstart/install
 
 git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+
+## Postman
+
+If you encounter Postman craches when open after login run this command:
+
+```bash
+ cd ~/.var/app/com.getpostman.Postman/config/Postman/proxy
+openssl req -subj '/C=US/CN=Postman Proxy' -new -newkey rsa:2048 -sha256 -days 365 -nodes -x509 -keyout postman-proxy-ca.key -out postman-proxy-ca.crt
+
+```
+
+see: https://github.com/postmanlabs/postman-app-support/issues/12421#issuecomment-1859309220
