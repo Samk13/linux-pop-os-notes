@@ -212,3 +212,11 @@ sudo apt reinstall --purge bluez gnome-bluetooth
 ```
 
 see: https://support.system76.com/articles/bluetooth/#:~:text=is%20expected%20behavior.-,Bluetooth,-Troubleshooting
+
+## NZXT cooling
+
+```bash
+sudo apt install liquidctl
+```
+
+apt is not officially supported See: https://github.com/liquidctl/liquidctl/blob/main/docs/kraken-x2-m2-guide.md
