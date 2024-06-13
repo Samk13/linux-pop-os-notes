@@ -201,3 +201,14 @@ After rebooting, check if the NVIDIA driver is correctly installed and the nvidi
 ```bash
 nvidia-smi
 ```
+
+## Bluetooth driver not loading
+
+after startup bluetooth was unrecognized for some reason the solution was:
+I suspecting Nvidia drivers here
+
+```bash
+sudo apt reinstall --purge bluez gnome-bluetooth
+```
+
+see: https://support.system76.com/articles/bluetooth/#:~:text=is%20expected%20behavior.-,Bluetooth,-Troubleshooting
