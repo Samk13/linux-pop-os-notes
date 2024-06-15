@@ -94,3 +94,19 @@ openssl req -subj '/C=US/CN=Postman Proxy' -new -newkey rsa:2048 -sha256 -days 3
 
 see: https://github.com/postmanlabs/postman-app-support/issues/12421#issuecomment-1859309220
 
+## bash
+
+Install https://starship.rs/
+Install https://starship.rs/presets/#gruvbox-rainbow
+
+edit python by adding `pyenv_version_name = true`
+in ~/.config/starship.toml
+
+```toml
+[python]
+symbol = ""
+pyenv_version_name = true
+python_binary = 'python3'
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+```
