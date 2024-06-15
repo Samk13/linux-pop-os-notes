@@ -1,6 +1,6 @@
 # Setup
 
-short notes on installing various packages and tools
+Short notes on installing various packages and tools
 
 ## Brew
 
@@ -93,3 +93,4 @@ openssl req -subj '/C=US/CN=Postman Proxy' -new -newkey rsa:2048 -sha256 -days 3
 ```
 
 see: https://github.com/postmanlabs/postman-app-support/issues/12421#issuecomment-1859309220
+
