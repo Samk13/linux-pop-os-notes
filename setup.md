@@ -110,3 +110,7 @@ python_binary = 'python3'
 style = "bg:color_blue"
 format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
 ```
+
+## dust
+
+see: [dust](https://github.com/bootandy/dust)
