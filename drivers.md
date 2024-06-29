@@ -152,7 +152,9 @@ Check the [link for more info](https://wiki.archlinux.org/title/Logitech_MX_Mast
 
 ## Nvidia Drivers
 
-When I login a found one of the screen is zoomed in, and the vertical screen is off.
+See: [docs](https://support.system76.com/articles/system76-driver/)
+
+When I log in I found one of the screens is zoomed in, and the vertical screen is off.
 Solution:
 
 Step 1: Purge Existing NVIDIA Packages
