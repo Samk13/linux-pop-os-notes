@@ -1,4 +1,4 @@
-# Extentions
+# Pop_OS Extentions
 
 If the web extention is not working you can install extentions with command:
 
