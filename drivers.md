@@ -148,6 +148,8 @@ devices: (
 
 ```
 
+To apply change run `sudo systemctl restart --now logid`
+
 Check the [link for more info](https://wiki.archlinux.org/title/Logitech_MX_Master)
 
 ## Nvidia Drivers
