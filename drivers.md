@@ -48,10 +48,10 @@ devices: (
                 };
         };
 
-        tap: {
-            type: "Keypress";
-            keys: ["KEY_MUTE"];
-        };
+#        tap: {
+#            type: "Keypress";
+#            keys: ["KEY_MUTE"];
+#        };
 
     };
     dpi: 1000;
