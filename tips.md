@@ -31,3 +31,23 @@ Unalias certain command you have
 ```bash
 unalias ** + Tab
 ```
+
+## Invenio
+
+```bash
+invenio-cli assets watch
+```
+
+got error System limit for number of file watchers reached, watch 
+
+check:
+
+```bash
+cat /proc/sys/fs/inotify/max_user_watches 65536
+```
+
+fix:
+
+```bash
+sudo sysctl fs.inotify.max_user_watches=524288
+```
