@@ -114,3 +114,18 @@ format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
 ## dust
 
 see: [dust](https://github.com/bootandy/dust)
+
+## Wayland
+
+Go to: `/etc/gdm3/custom.conf`
+
+```toml
+[daemon]
+WaylandEnable=true # Flip it to true
+```
+
+restart
+Then when you log out, you will find a new setting in the corner of the screen, choose wayland instead of X11
+You can check that you change it by going to settings -> about -> windowing System: Wayland
+
+or in the terminal `echo $XDG_SESSION_TYPE`
