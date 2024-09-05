@@ -373,3 +373,16 @@ Kill processes After running this command, click on the window you wish to close
 ```bash
 xkill
 ```
+
+## strace
+
+For tracing system calls made by a program
+```bash
+strace -p <PID>
+
+strace -o trace.log ls # Save output to a file:
+
+strace -e open,read ls # See only a specific type of system call
+
+strace -c ls # Count system calls
+```
