@@ -17,6 +17,6 @@ Or you can install Extention manager from Pop_Os store and look for the extentio
 
 [Home Page](https://github.com/lucasresck/gnome-shell-extension-alt-tab-scroll-workaround)
 
-## Emoji Selector
+## Emoji Copy
 
-[Home Page](https://github.com/maoschanz/emoji-selector-for-gnome)
+[Home Page](https://github.com/felipeftn/emoji-copy)
