@@ -129,3 +129,12 @@ Then when you log out, you will find a new setting in the corner of the screen, 
 You can check that you change it by going to settings -> about -> windowing System: Wayland
 
 or in the terminal `echo $XDG_SESSION_TYPE`
+
+## UV
+
+See [Docs](https://docs.astral.sh/uv/getting-started/)
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
+```
