@@ -94,10 +94,29 @@ openssl req -subj '/C=US/CN=Postman Proxy' -new -newkey rsa:2048 -sha256 -days 3
 
 see: https://github.com/postmanlabs/postman-app-support/issues/12421#issuecomment-1859309220
 
-## bash
+## Starship bash
 
 Install https://starship.rs/
 Install https://starship.rs/presets/#gruvbox-rainbow
+
+config:
+make sure python have this options to show venv:
+
+```toml
+[python]
+symbol = ""
+pyenv_version_name = true
+python_binary = 'python3'
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ($virtualenv )](fg:color_fg0 bg:color_blue)]($style)'
+
+```
+
+to disable it, in .bashrc, comment this line:
+`eval "$(starship init bash)"export PATH=$HOME/.local/bin:$PATH`
+
+To start bash without any profile run:
+`env -i bash --noprofile --norc`
 
 edit python by adding `pyenv_version_name = true`
 in ~/.config/starship.toml
