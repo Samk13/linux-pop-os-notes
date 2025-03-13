@@ -45,20 +45,17 @@ export FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,bg:#131e29,hl:#bd93f9 --color=fg+:#f
 
 
 
-# Function to create and activate a pyenv virtualenv based on the current folder name
-pyenv_auto_venv() {
-    # Get the name of the current directory
-    foldername=$(basename "$PWD")
-
-    # Check if the virtualenv already exists
-    if ! pyenv virtualenvs | grep -q "${foldername}"; then
-        # Create the virtualenv
-        pyenv virtualenv "${foldername}"
+# auto activate pyenv virtualenv
+function pyenv_auto_venv() {
+    local foldername=${PWD:t}
+    local venvs=("${(@f)$(pyenv virtualenvs --bare)}")
+    if (( ${venvs[(I)$foldername]} == 0 )); then
+        pyenv virtualenv "$foldername"
     fi
-
-    # Activate the virtualenv using pyenv activate
-    pyenv activate "${foldername}"
+    pyenv activate "$foldername"
 }
 
-# Create an alias for the function
 alias pyenv_auto_venv='pyenv_auto_venv'
+
+# change screenshot format to jpg (Mac)
+# defaults write com.apple.screencapture type jpg  && killall SystemUIServer
